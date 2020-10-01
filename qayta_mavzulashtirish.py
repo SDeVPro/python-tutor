@@ -64,29 +64,29 @@
 
 #tartiblash algoritmlari
 
-list = [9,8,7,6,5,4,3,2,1,0]
-
-for j in range(0,10):
-    for i in range(0,9):
-        if list[i] > list[i+1]:
-            temp = list[i]
-            list[i]=list[i+1]
-            list[i+1]=temp
-print(list)
-
-def quick_sort(sequence):
-    lenght = len(sequence)
-    if lenght <=1:
-        return sequence
-    else:
-        pivot = sequence.pop()
-        items_greater = []
-        items_lower = []
-    for item in sequence:
-        if item > pivot:
-            items_greater.append(item)
-        else:
-            items_lower.append(item)
-    return quick_sort(items_lower)+[pivot]+quick_sort(items_greater)
-print(quick_sort([5,6,7,8,11,11,12,51,4141,55,3,6,84]))
+# list = [9,8,7,6,5,4,3,2,1,0]
+#
+# for j in range(0,10):
+#     for i in range(0,9):
+#         if list[i] > list[i+1]:
+#             temp = list[i]
+#             list[i]=list[i+1]
+#             list[i+1]=temp
+# print(list)
+#
+# def quick_sort(sequence):
+#     lenght = len(sequence)
+#     if lenght <=1:
+#         return sequence
+#     else:
+#         pivot = sequence.pop()
+#         items_greater = []
+#         items_lower = []
+#     for item in sequence:
+#         if item > pivot:
+#             items_greater.append(item)
+#         else:
+#             items_lower.append(item)
+#     return quick_sort(items_lower)+[pivot]+quick_sort(items_greater)
+# print(quick_sort([5,6,7,8,11,11,12,51,41,41,55,3,6,84,12,15,15,1,215,123,55,15,66,55]))
 
